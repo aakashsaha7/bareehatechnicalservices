@@ -1,0 +1,234 @@
+@import '~noty/src/noty.scss';
+// @import '~noty/src/themes/mint.scss';
+@import './variables.scss';
+@import './services.scss';
+@import './utils.scss';
+@import './contact.scss';
+@import './book.scss';
+@import './work.scss';
+@import './about.scss';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    // overflow: hidden; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    /* margin: 20px; */
+    list-style: none;
+}
+nav ul li{
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: $montSemi;
+}
+a:hover{
+    color:orange;
+}
+
+#card-section{
+   display: flex;
+   align-items: center;
+   justify-content:flex-end;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+   background: white;
+   height:400px;
+   width: 32%;
+   opacity: 0.9;
+   margin: 60px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+    font-weight: bold; 
+    // border:2px solid red;   
+}
+.card p{
+    font-size: 1.5rem;
+    font-family: $Bell;
+}
+.info{
+    margin-top: 50px;
+}
+.btn{
+    margin: 5px;
+}
+#hotline-section{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#5b5c5e;
+    width: 100%;
+    height:200px;
+}
+.hotline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 30vw;
+    font-weight: bold;
+    border: 2px solid rgb(212, 211, 211);
+    border-radius: 9px;
+    background: rgb(212, 211, 211);
+}
+
+.hotline img{
+    width: 40px;
+    margin-right: 5px;
+    color: #bdbfc1;
+    border-radius: 28px;
+}
+.hotline p{
+    margin: 12px;
+    font-family: $montSemi;
+}
+.btn-primary {
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+section.cart {
+    background: $secondary;
+    .amount {
+        color: $primary;
+    }
+}
+
+section.login {
+    background: $secondary;
+    a {
+        color: $primary;
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+}
+section.login {
+    background: $secondary;
+    min-height: calc(100vh - 186px);
+    a {
+        color: $primary;
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+}
+.menu-icon{
+    display: none;
+    
+}
+
+
+@media only screen and (max-width:860px){
+    .menu-icon{
+        display: block;
+        width: 40px;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background:black;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display:flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    #card-section{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .card{
+        width: 45vw;
+        // height: 40vh;
+    }
+    .hotline p{
+        font-size: 10px;
+    }
+    .hotline img{
+     width: 35px;   
+    }
+    .card{
+        margin: 40px;
+    }
+    }
+
+    @media only screen and (max-width:650px){
+
+        .card p{
+            font-size: 1rem;
+        }
+        .btn{
+            padding: 6px;
+        }
+       
+    }
+    @media only screen and (max-width:577px){
+        .hotline{
+            padding: 0px;
+        }
+        .hotline img{
+            width: 15px;
+        }
+        .hotline p{
+            font-size: 5px;
+            margin: 2px;
+        }
+        .card{
+            width: 55vw;
+            // height: 50vh;
+        }
+    }
+    @media only screen and (max-width:363px){
+
+        .card{
+            width: 65vw;
+            // height: 50vh;
+        }
+       .hotline p{
+           font-size: 4px;
+       }
+
+    }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind css  -->
+    
+    <!-- Bootstrap js  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+    <title>Bareeha Technical Services - Best Home Maintenance  Company In Dubai</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/book.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/work.css">
+    <link rel="stylesheet" href="/css/utils.css">
+</head>
+
+<body>
+    
+    <header class="bg">
+        
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/"><img class="ml-4" src="/img/web_logo.png" width="80px" alt=""></a></div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/services">SERVICES</a></li>
+                        <li><a href="/work">HOW WE WORK</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                        <% if(user) { %>
+                            <li class="ml-6">
+                                <form id="logout" action="/logout" method="POST"></form>
+                                    <a onclick="document.getElementById('logout').submit()" href="#">LOGOUT</a>
+                                </form>
+                            </li>
+                            <% } else { %> 
+                           
+                                <li><a href="/login">SIGNIN</a></li>
+                            <% } %> 
+                    </ul>
+                </nav>
+                
+                <img src="/img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+
+    </header>
+    
+       <!-- -----------------------------------js for toggle menu-------------------------- -->
+<script>
+    var menuItems = document.getElementById('menuItems');
+    
+    menuItems.style.maxHeight = "0px";
+    function menutoggle () {
+        if (menuItems.style.maxHeight =="0px") {
+            menuItems.style.maxHeight = "200px";
+          
+            
+         } else {
+         menuItems.style.maxHeight = "0px";
+            
+        }
+    }
+  </script>
+    
+ <%- body %>
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>

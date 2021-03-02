@@ -1,0 +1,142 @@
+
+// #contact-section{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: white;
+//     width: 100%;
+//     height: 250px;
+// }
+// #contact-info{
+//     background:#e4e4e3;
+//     background-size: 100%;
+//     height:500px;
+//     width: 100%;
+// }
+// .contact-info{
+//     background: rgba(251, 244, 244, 0.5);
+//     color: #fff;
+//     transform: translate(50,50);
+//     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+//     box-sizing: border-box;
+// }
+
+// #contact-form{
+//     background:#e4e4e3;
+//     background-size: 100%;
+//     height:700px;
+//     width: 100%;
+// }
+// .form-info{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;  
+//     margin: 65px;
+//     float: right;
+//     width: 25%;
+//     height:400px;
+//     background:#797979;
+//     color: #fff;
+//     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+//     border: 2px solid #858585;
+//     border-radius: 7px;
+//     // box-sizing: border-box;
+// }
+
+
+// .form-info input,textarea{
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     margin: 8px;
+//     padding: 2px;
+//     border: 2px solid white;
+//     outline: none;
+//     border-radius: 5px;
+// }
+
+// .book-btn{
+//     border: 2px solid #7c9b9a;
+//     color: white;
+//     background:#7c9b9a;
+//     padding: 8px 18px;
+//     border-radius: 8px;
+//     font-weight: bold;
+//     cursor: pointer;
+//     outline: none;
+//     margin: 5px;
+// }
+// .links{
+//     display: flex;
+//     // flex-wrap: wrap;
+// }
+// .social{ 
+//     position:relative;
+//     top: 90px;
+//     left:20px;
+// }
+// .social img{
+//     margin: 12px;
+//     border: 2px solid white;
+//     border-radius: 20px;
+// }
+// .qr-code{
+//     // display: flex;
+//     // flex-wrap:wrap;
+//     padding: 80px;
+// }
+
+
+// Responsive Desing For contact
+@media only screen and (max-width: 1114px){
+.form-info{
+    width: 35%;
+}
+}
+
+@media only screen and (max-width: 811px){
+.form-info{
+    position: relative;
+    top: 150px;
+}
+.qr-code{
+    padding: 20px;
+}
+.social{
+    // display: block;
+    margin: auto;
+    top: -150px;
+    left: 287px;
+}
+.social img{
+    display: flex;
+}
+.form-info{
+    width: 45%;
+}
+.social{
+    left: 200px;
+}
+}
+
+@media only screen and (max-width: 616px){
+.form-info{
+    width: 55%;
+}
+
+.form-info{
+    margin-top: 50px;
+}
+}
+
+@media only screen and (max-width: 520px){
+.social img{
+    width: 20px;
+}
+.form-info{
+width: 60%;
+}
+.form-info{
+    float: none;
+}
+}

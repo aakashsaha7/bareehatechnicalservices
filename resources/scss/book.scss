@@ -1,0 +1,114 @@
+
+.book{
+   display: flex;
+   justify-content: flex-end;
+   padding: 40px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    width: 25%;
+    height:420px;
+    background: rgba(251, 244, 244, 0.5);
+    color: #fff;
+    transform: translate(50,-50%);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+
+
+.form input{
+    display: flex;
+    width: 250px;
+    margin: 8px;
+    padding: 2px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+}
+.book-btn{
+    border: 2px solid #7c9b9a;
+    color: white;
+    background:#7c9b9a;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+}
+
+
+// Responsive Design 
+@media only screen and (max-width: 1168px){
+.form{
+    width: 34%;
+}
+}
+@media only screen and (max-width:856px){
+    #book-section{
+        display: flex;
+        align-items: center;
+      
+    }
+    .form{
+        width: 100%;
+    }
+    .book{
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width:796px){
+.form{
+    padding: 5px;
+    height: 80%;
+    width: 100%;
+}
+.form input{
+    width: 200px;
+}
+.book-btn{
+    padding: 7px;
+}
+
+}
+
+@media only screen and (max-width:619px){
+.form{
+    height: 200px;
+}
+.form input{
+    width: 130px;
+    padding: 0;
+    margin: 2px;
+}
+.text{
+    font-size: 8px;
+}
+.book-btn{
+    font-size: 8px;
+}
+}
+@media only screen and (max-width:380px){
+.form{
+    height: 130px;
+}
+.form input{
+    width: 90px;
+    height: 10px;
+    padding: 0;
+    margin: 1px;
+
+}
+.text{
+    font-size: 5px;
+}
+.book-btn{
+    font-size: 5px;
+    padding: 3px;
+}
+}

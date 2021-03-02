@@ -1,0 +1,260 @@
+@import './variables';
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+.bg-2{
+    background: #7c9b9a;
+}
+.decoration{
+    text-decoration: none;
+}
+.text-color li a{
+    color: white;
+    text-decoration: none;
+}
+.mar-y{
+    margin-top: 50px;
+}
+.transparent{
+    width: 320px;
+    height: 420px;
+    background: rgba(251, 244, 244, 0.5);
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+#services-section{
+background:url('/img/bg.jpeg')no-repeat;
+background-size: 100%;
+height: 500px;
+margin-top: 30px;
+}
+.transparent-2{
+    opacity: 0.5;
+   
+}
+
+.style{
+    margin: auto;
+    font-size: 1rem;
+    text-align: center;
+}
+.text-cr{
+    color: white;
+}
+// #bareeha-section{
+//     background: url('/img/infobg.jpeg')no-repeat;
+//     background-size: 100%;
+//     height: 590px;
+//     width: 100%;
+// }
+// #first-section{
+
+//     height: 100vh;
+   
+// }
+
+// .bareeha-right-box{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     // align-items: center;
+//     color: white;
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     max-width: 100%;
+//     margin: auto;
+//     height: 90%;
+// }
+
+// .bareeha-left{
+//     position: relative;
+//     top: 300px;
+//     left: 60px;
+//     color: white;
+// }
+// .bareeha-right{
+//    display:flex;
+//    flex-direction: column;
+//    justify-content: center;
+//     padding:50px;
+//     padding-top:0px;
+//     margin-right: 50px;
+//     float: right;
+//     width: 28%;
+//     height: 70%;
+//     background: rgba(251, 244, 244, 0.5);
+//     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+// }
+// .bareeha-right h4{
+//     font-size: 12px;
+//     color: black;
+//     padding: 25px;
+// }
+// .bareeha-right p{
+//     color: white;
+//     font-size: 12px;
+// }
+
+#footer-section{
+    height: 500px;
+    background: #7c9b9a;
+    font-family: $montSemi;
+    
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+footer h1{
+    font-size: 2rem;
+    color: white;
+    
+}
+footer li{
+    list-style: none;
+    padding: 5px;
+    font-family: $montSemi;
+}
+footer li a{
+    text-decoration: none;
+    color: #000;
+}
+.left{
+    width: 25%;
+    height: 100px;
+    /* background: red; */
+    font-size: 1.85rem;
+    color: white;
+    margin: auto;
+}
+
+.mid{
+    width: 25%;
+    /* background: green; */
+    height: 100px;
+    list-style: none;
+}
+.mid h1{
+    font-family: 'Copperplate Gothic Bold';
+}
+.mid-2{
+    width: 25%;
+    height: 100px;
+}
+.mid-2 img{
+    border:2px solid white;
+    border-radius: 15px;
+    
+}
+.mid-2 h1{
+    font-family: 'Copperplate Gothic Bold';
+}
+.right{
+    width: 25%;
+    /* background:black; */
+    height: 100px;
+}
+.right h1{
+    font-family: 'Copperplate Gothic Bold';
+}
+.right li{
+    padding-top: 8px;
+    font-size: 15px;
+}
+.number{
+width: 20px;
+border: 2px solid green;
+border-radius: 15px;
+}
+.footer{
+position:relative;
+top: 300px;
+padding:0px;
+background: rgb(212, 211, 211);
+}
+.footer p{
+    margin-left: 60px;
+}
+
+
+
+// Responsive Desing For Footer 
+@media only screen and (max-width: 1033px){
+footer{
+    padding: 12px;
+}
+    footer li{
+    padding: 2px;
+}
+footer li a{
+    font-size: 11px;
+}
+footer h1{
+    font-size: 1.2rem;
+}
+.left{
+    font-size: 1rem;
+}
+.mid-2 h1{
+font-size: 8px;
+}
+.right li{
+    font-size: 11px;
+}
+.mid h1{
+    font-size: 8px;
+}
+}
+
+@media only screen and (max-width: 526px){
+   footer li{
+       padding: 0;
+   }
+    footer li a{
+        font-size: 8px;
+    }
+    footer h1{
+        font-size: 12px;
+    }
+    .left{
+        font-size: 8px;
+    }
+    .right li{
+        font-size: 8px;
+    }
+    .right h1{
+        font-size: 8px;
+        font-family: 'Copperplate Gothic Bold';
+    }
+    .mid-2 h1{
+        font-size: 7px;
+    }
+}
